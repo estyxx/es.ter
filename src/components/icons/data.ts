@@ -1,0 +1,41 @@
+export const DATA = {
+  name: "Ester Beltrami",
+  experience: [
+    {
+      from: "2021-02-17",
+      company: "Made.com",
+      location: "London",
+      url: "https://made.com",
+      job_title: "Full Stack Web Developer",
+      technologies: [
+        "Python",
+        "GraphQL",
+        "React",
+        "Typescript",
+        "JavaScript",
+        "Terraform",
+        "Ansible",
+        "Eventstore",
+      ],
+    },
+    {
+      from: "2019-12-03",
+      to: "2021-02-16",
+      company: "Digitalis",
+      location: "London",
+      url: "https://digitalis.com",
+      job_title: "Full Stack Web Developer",
+      technologies: ["Python", "Django", "GraphQL", "React", "JavaScript"],
+    },
+    {
+      from: "2016-05-02",
+      to: "2019-11-30",
+      company: "OT Consulting, MaxMara",
+      location: "Italy",
+      // "url": "https://ot-consulting.com",
+      technologies: ["Python", "JavaScript", "AngularJS"],
+    },
+  ],
+  education: [],
+  "open-source": [],
+};
