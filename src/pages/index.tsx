@@ -52,7 +52,7 @@ const Home = (): JSX.Element => {
               <div>
                 <Link
                   className="px-8 py-4 font-mono border-2 rounded-sm border-emerald-300 text-emerald-300"
-                  href="/cv"
+                  href="/resume"
                 >
                   Click here for my CV!
                 </Link>
