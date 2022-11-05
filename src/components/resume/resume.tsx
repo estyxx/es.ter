@@ -180,8 +180,7 @@ export const Resume = (): JSX.Element => {
                 organize Python conferences such as PyCon Italia and contribute
                 to open-source projects such as <StrawberryLink /> and{" "}
                 <PoetryLink />.
-                <br />I also have experience working with Agile, Scrum, CI/CD,
-                AWS, NoSQL, TDD and more.
+               <br/>
               </h1>
               <SectionTitle title="Experience" />
               <Experience
@@ -199,10 +198,10 @@ export const Resume = (): JSX.Element => {
                   </li>
                   <li>
                     Working with different python frameworks like{" "}
-                    <span className="font-bold">starlette</span>,
+                    <span className="font-bold">Starlette</span>,{" "}
                     <span className="font-bold">Flask</span>,{" "}
                     <span className="font-bold">Aiohttp</span>,{" "}
-                    <span className="font-bold">FastAPI</span>, and
+                    <span className="font-bold">FastAPI</span>, and{" "}
                     <span className="font-bold">Django Rest Framework</span>.
                   </li>
                   <li>
