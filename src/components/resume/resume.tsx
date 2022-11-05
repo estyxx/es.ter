@@ -19,16 +19,14 @@ const Experience = ({
   children: React.ReactNode;
 }): JSX.Element => {
   return (
-    <div className="mb-2">
+    <div className="mb-4">
       <h1 className="font-semibold tracking-wide text-gray-600 uppercase">
         {jobTitle}
       </h1>
       <p className="mb-2 text-sm tracking-widest text-gray-500 uppercase">
-        <Link href={companyUrl}>
-        {companyName}
-        </Link> | {from} - {to}
+        <Link href={companyUrl}>{companyName}</Link> | {from} - {to}
       </p>
-      <div className="mb-1 ml-4 text-gray-500 list-disc">{children}</div>
+      <div className="mb-1 text-gray-500 list-disc">{children}</div>
     </div>
   );
 };
@@ -64,7 +62,7 @@ const Education = ({
 
 const SectionTitle = ({ title }: { title: string }) => {
   return (
-    <h1 className="my-1 text-lg font-bold tracking-widest text-gray-400 uppercase">
+    <h1 className="my-3 text-lg font-bold tracking-widest text-gray-400 uppercase">
       {title}
     </h1>
   );
@@ -88,7 +86,7 @@ export const Resume = (): JSX.Element => {
             <div className="col-span-3 py-4 border-b-2 border-gray-300">
               <Header />
             </div>
-            <div className="">
+            <div className="px-6">
               <div className="flex items-center justify-center mb-10 print:hidden">
                 <Image
                   src="/foto.profilo.1.png"
@@ -98,21 +96,6 @@ export const Resume = (): JSX.Element => {
                   height="500"
                 />
               </div>
-              <SectionTitle title="Education" />
-              <Education
-                title="Computer Science Degree"
-                schoolName="University of Modena and Reggio Emilia"
-                from="2009"
-                to="2016"
-                location="Italy"
-              />
-              <Education
-                title="Diploma of Accountant, Commercial Expert and Programmer"
-                schoolName={`I.T.C.G. Institute "Luigi Einaudi"`}
-                to="2009"
-                location="Correggio RE, Italy"
-              />
-
               {/* <SectionTitle title="SKILLS" />
               {[
                 "Python",
@@ -124,7 +107,6 @@ export const Resume = (): JSX.Element => {
               ].map((item) => (
                 <div key={item}>{item}</div>
               ))} */}
-
               <SectionTitle title="open-source" />
               <Experience
                 jobTitle="Full stack developer and Conference organizer"
@@ -136,7 +118,6 @@ export const Resume = (): JSX.Element => {
                 micro-services build with Python, Django, GraphQL, React,
                 Next.js, Storybook, Tailwind CSS.
               </Experience>
-
               <Experience
                 jobTitle="Core developer"
                 companyName="strawberry-graphql"
@@ -145,17 +126,37 @@ export const Resume = (): JSX.Element => {
               >
                 A library to create GraphQL APIs with Python, dataclasses and
                 type hints.
-                <li>Feature development, bug fixing, user support and docs writing.</li>
+                <li className="ml-4">
+                  Feature development, bug fixing, user support and docs
+                  writing.
+                </li>
               </Experience>
               <SectionTitle title="Activity" />
+              <div className="mb-4">
+                <h1 className="font-semibold tracking-wide text-gray-600 uppercase">
+                  Talk &quot;Automate cleaning code in a few easy steps&quot;
+                </h1>
+                <p className="mb-2 text-sm tracking-widest text-gray-500 uppercase">
+                  <Link href="https://www.youtube.com/watch?v=7_FyRR3yN-k&t=22s">
+                    https://bit.ly/3U4eAX4
+                  </Link>
+                </p>
+                <div className="mb-1 text-gray-500 list-disc">
+                  In these organizations, I discovered several excellent tools
+                  and automations that improve your development experience. I
+                  talked about them in my talk at PyCon Italia, Europython and
+                  Django London meetup.
+                </div>
+              </div>
             </div>
-            <div className="col-span-2 ">
+            <div className="col-span-2 px-6">
+              <SectionTitle title="Profile" />
               <h1 className="text-gray-500">
                 I am a passionate full-stack developer with a degree in Computer
                 Science and over 6+ years of experience building websites and
-                products using Python, React, React, Next.js and REST/GraphQL as my
-                favourite tech stack. In my free time, I also love to attend and
-                help organize Python conferences such as PyCon Italy and
+                products using Python, React, React, Next.js and REST/GraphQL as
+                my favourite tech stack. In my free time, I also love to attend
+                and help organize Python conferences such as PyCon Italy and
                 contribute to open-source projects such as strawberry-graphql.
                 <br />I also have experience working with Agile, Scrum, CI/CD,
                 AWS, NoSQL, TDD and more.
@@ -167,32 +168,35 @@ export const Resume = (): JSX.Element => {
                 companyUrl="https://made.com"
                 from="February 2021"
               >
-                <li>
-                  Software development and design of the micro-services sitting
-                  behind the scenes of MADE.COM responsible for managing
-                  warehouses, carriers and shipping to the end customer.
-                </li>
-                <li>
-                  Working with different python frameworks like Starlette,
-                  Flask, Aiohttp, FastAPI, and Django Rest Framework.
-                </li>
-                <li>
-                  A reference point for GraphQL migration because of my
-                  open-source work with the Strawberry-graphql library. I was
-                  able to give guidance on how to implement our graphql API
-                  better.
-                </li>
-                <li>
-                  Leading the UI development of internal administration UI
-                  interfaces for managing consignments and carriers. My
-                  experience with React and Next.js has allowed me to help the
-                  team develop these applications.
-                </li>
-                <li>
-                  Refactor the public Made.com blog. Migrate to React and
-                  Next.js and, together with the Design Team, give it a new
-                  look.
-                </li>
+                <div className="ml-4">
+                  <li>
+                    Software development and design of the micro-services
+                    sitting behind the scenes of MADE.COM responsible for
+                    managing warehouses, carriers and shipping to the end
+                    customer.
+                  </li>
+                  <li>
+                    Working with different python frameworks like Starlette,
+                    Flask, Aiohttp, FastAPI, and Django Rest Framework.
+                  </li>
+                  <li>
+                    A reference point for GraphQL migration because of my
+                    open-source work with the Strawberry-graphql library. I was
+                    able to give guidance on how to implement our graphql API
+                    better.
+                  </li>
+                  <li>
+                    Leading the UI development of internal administration UI
+                    interfaces for managing consignments and carriers. My
+                    experience with React and Next.js has allowed me to help the
+                    team develop these applications.
+                  </li>
+                  <li>
+                    Refactor the public Made.com blog. Migrate to React and
+                    Next.js and, together with the Design Team, give it a new
+                    look.
+                  </li>
+                </div>
               </Experience>
               <Experience
                 jobTitle="Full Stack Web Developer"
@@ -201,24 +205,26 @@ export const Resume = (): JSX.Element => {
                 from="December 2019"
                 to="February 2021"
               >
-                <li>
-                  Developing of a web application that allows the extraction of
-                  information from the web, get notified if anything chances on
-                  social media such as Twitter/Facebook and more, allowing our
-                  internal teams to work more effectively.
-                </li>
-                <li>
-                  Work on backend micro-services built using Django and DRF by
-                  either building new services or improving existing ones.
-                </li>
-                <li>
-                  Implemented a CI infrastructure using Jenkins to test and
-                  deploy our services to AWS on ElasticBeanstalk. ,
-                </li>
-                <li>
-                  Occasionaly, helped with the React frontend building new
-                  features or bug fixing.
-                </li>
+                <div className="ml-4">
+                  <li>
+                    Developing of a web application that allows the extraction
+                    of information from the web, get notified if anything
+                    chances on social media such as Twitter/Facebook and more,
+                    allowing our internal teams to work more effectively.
+                  </li>
+                  <li>
+                    Work on backend micro-services built using Django and DRF by
+                    either building new services or improving existing ones.
+                  </li>
+                  <li>
+                    Implemented a CI infrastructure using Jenkins to test and
+                    deploy our services to AWS on ElasticBeanstalk. ,
+                  </li>
+                  <li>
+                    Occasionaly, helped with the React frontend building new
+                    features or bug fixing.
+                  </li>
+                </div>
               </Experience>
               <Experience
                 jobTitle="Web Developer"
@@ -229,14 +235,16 @@ export const Resume = (): JSX.Element => {
               >
                 At OT Consulting I used to be a consultant for Max Mara, an
                 international fashion company.
-                <li>
-                  helping them develop and mantain their ERP web applications
-                  for inventory management.
-                </li>
-                <li>
-                  developed support the new Italian`&apos;s electronic invoice and
-                  more.
-                </li>
+                <div className="ml-4">
+                  <li>
+                    helping them develop and mantain their ERP web applications
+                    for inventory management.
+                  </li>
+                  <li>
+                    developed support the new Italian`&apos;s electronic invoice
+                    and more.
+                  </li>
+                </div>
               </Experience>
             </div>
           </div>
