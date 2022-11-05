@@ -68,6 +68,30 @@ const SectionTitle = ({ title }: { title: string }) => {
   );
 };
 
+const StrawberryLink = (): JSX.Element => {
+  return (
+    <Link href="https://strawberry.rocks/" target="_blank">
+      <span className="font-mono">strawberry-graphql</span>
+    </Link>
+  );
+};
+
+const PyConItaliaLink = (): JSX.Element => {
+  return (
+    <Link href="https://pycon.it/" target="_blank">
+      PyCon Italia
+    </Link>
+  );
+};
+
+const PoetryLink = (): JSX.Element => {
+  return (
+    <Link href="https://python-poetry.org/" className="font-bold">
+      Poetry Package Manager
+    </Link>
+  );
+};
+
 export const Resume = (): JSX.Element => {
   return (
     <div className="flex justify-center px-16 py-6 text-slate-900">
@@ -96,17 +120,7 @@ export const Resume = (): JSX.Element => {
                   height="500"
                 />
               </div>
-              {/* <SectionTitle title="SKILLS" />
-              {[
-                "Python",
-                "React",
-                "GraphQL",
-                "JavaScript",
-                "Typescript",
-                "",
-              ].map((item) => (
-                <div key={item}>{item}</div>
-              ))} */}
+
               <SectionTitle title="open-source" />
               <Experience
                 jobTitle="Full stack developer and Conference organizer"
@@ -137,13 +151,16 @@ export const Resume = (): JSX.Element => {
                   Talk &quot;Automate cleaning code in a few easy steps&quot;
                 </h1>
                 <p className="mb-2 text-sm tracking-widest text-gray-500 uppercase">
-                  <Link href="https://www.youtube.com/watch?v=7_FyRR3yN-k&t=22s">
+                  <Link
+                    href="https://www.youtube.com/watch?v=7_FyRR3yN-k&t=22s"
+                    target="_blank"
+                  >
                     https://bit.ly/3U4eAX4
                   </Link>
                 </p>
                 <div className="mb-1 text-gray-500 list-disc">
                   In these organizations, I discovered several excellent tools
-                  and automations that improve your development experience. I
+                  and automation that improve your development experience. I
                   talked about them in my talk at PyCon Italia, Europython and
                   Django London meetup.
                 </div>
@@ -154,10 +171,11 @@ export const Resume = (): JSX.Element => {
               <h1 className="text-gray-500">
                 I am a passionate full-stack developer with a degree in Computer
                 Science and over 6+ years of experience building websites and
-                products using Python, React, React, Next.js and REST/GraphQL as
-                my favourite tech stack. In my free time, I also love to attend
-                and help organize Python conferences such as PyCon Italy and
-                contribute to open-source projects such as strawberry-graphql.
+                products using Python, GraphQL, React, Next.js and Typescript as
+                my favorite tech stack. In my free time, I also love to attend
+                and help organize Python conferences such as PyCon Italia and
+                contribute to open-source projects such as <StrawberryLink />
+                and <PoetryLink/>.
                 <br />I also have experience working with Agile, Scrum, CI/CD,
                 AWS, NoSQL, TDD and more.
               </h1>
@@ -181,7 +199,7 @@ export const Resume = (): JSX.Element => {
                   </li>
                   <li>
                     A reference point for GraphQL migration because of my
-                    open-source work with the Strawberry-graphql library. I was
+                    open-source work with the <StrawberryLink /> library. I was
                     able to give guidance on how to implement our graphql API
                     better.
                   </li>
@@ -218,10 +236,10 @@ export const Resume = (): JSX.Element => {
                   </li>
                   <li>
                     Implemented a CI infrastructure using Jenkins to test and
-                    deploy our services to AWS on ElasticBeanstalk. ,
+                    deploy our services to AWS on ElasticBeanstalk.
                   </li>
                   <li>
-                    Occasionaly, helped with the React frontend building new
+                    Occasionally, helped with the React frontend building new
                     features or bug fixing.
                   </li>
                 </div>
@@ -237,11 +255,11 @@ export const Resume = (): JSX.Element => {
                 international fashion company.
                 <div className="ml-4">
                   <li>
-                    helping them develop and mantain their ERP web applications
+                    helping them develop and maintain their ERP web applications
                     for inventory management.
                   </li>
                   <li>
-                    developed support the new Italian`&apos;s electronic invoice
+                    developed support the new Italian&apos;s electronic invoice
                     and more.
                   </li>
                 </div>

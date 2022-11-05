@@ -42,10 +42,9 @@ const Home = (): JSX.Element => {
                 </p>
                 <p className="text-slate-400">
                   My favorite tech stack is <b>Python</b>, <b>GraphQL</b>,{" "}
-                  <b>React</b>, <b>Next.js</b> and
-                  <b>Typescript</b>. I also have experience working with{" "}
-                  <b>Agile</b>, <b>Scrum</b>, <b>CI/CD</b>,<b>AWS</b>,{" "}
-                  <b>NoSQL</b>, <b>TDD</b> and more.
+                  <b>React</b>, <b>Next.js</b> and <b>Typescript</b>. I also
+                  have experience working with <b>Agile</b>, <b>Scrum</b>,{" "}
+                  <b>CI/CD</b>,<b>AWS</b>, <b>NoSQL</b>, <b>TDD</b> and more.
                 </p>
               </div>
 
@@ -65,17 +64,29 @@ const Home = (): JSX.Element => {
         <div className="fixed right-0 bottom-4 left-4">
           <div className="p-4">
             <Link href="https://github.com/estyxx">
-              <FontAwesomeIcon icon={brands("github")} className="hover:text-emerald-300" size="xl"/>
+              <FontAwesomeIcon
+                icon={brands("github")}
+                className="hover:text-emerald-300"
+                size="xl"
+              />
             </Link>
           </div>
           <div className="p-4">
             <Link href="https://www.linkedin.com/in/beltramiester/">
-            <FontAwesomeIcon icon={brands("linkedin")} className="hover:text-emerald-300" size="xl"/>
+              <FontAwesomeIcon
+                icon={brands("linkedin")}
+                className="hover:text-emerald-300"
+                size="xl"
+              />
             </Link>
           </div>
           <div className="p-4">
             <Link href="https://twitter.com/esterbeltrami">
-            <FontAwesomeIcon icon={brands("twitter")} className="hover:text-emerald-300" size="xl"/>
+              <FontAwesomeIcon
+                icon={brands("twitter")}
+                className="hover:text-emerald-300"
+                size="xl"
+              />
             </Link>
           </div>
         </div>
