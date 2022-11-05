@@ -71,7 +71,7 @@ const SectionTitle = ({ title }: { title: string }) => {
 const StrawberryLink = (): JSX.Element => {
   return (
     <Link href="https://strawberry.rocks/" target="_blank">
-      <span className="font-mono">strawberry-graphql</span>
+      <span className="font-mono font-bold">strawberry-graphql</span>
     </Link>
   );
 };
@@ -171,11 +171,15 @@ export const Resume = (): JSX.Element => {
               <h1 className="text-gray-500">
                 I am a passionate full-stack developer with a degree in Computer
                 Science and over 6+ years of experience building websites and
-                products using Python, GraphQL, React, Next.js and Typescript as
-                my favorite tech stack. In my free time, I also love to attend
-                and help organize Python conferences such as PyCon Italia and
-                contribute to open-source projects such as <StrawberryLink />
-                and <PoetryLink/>.
+                products using <span className="font-bold">Python</span>,{" "}
+                <span className="font-bold">GraphQL</span>,{" "}
+                <span className="font-bold">React</span>,{" "}
+                <span className="font-bold">Next.js</span> and{" "}
+                <span className="font-bold">Typescript</span> as my favorite
+                tech stack. In my free time, I also love to attend and help
+                organize Python conferences such as PyCon Italia and contribute
+                to open-source projects such as <StrawberryLink /> and{" "}
+                <PoetryLink />.
                 <br />I also have experience working with Agile, Scrum, CI/CD,
                 AWS, NoSQL, TDD and more.
               </h1>
@@ -194,8 +198,12 @@ export const Resume = (): JSX.Element => {
                     customer.
                   </li>
                   <li>
-                    Working with different python frameworks like Starlette,
-                    Flask, Aiohttp, FastAPI, and Django Rest Framework.
+                    Working with different python frameworks like{" "}
+                    <span className="font-bold">starlette</span>,
+                    <span className="font-bold">Flask</span>,{" "}
+                    <span className="font-bold">Aiohttp</span>,{" "}
+                    <span className="font-bold">FastAPI</span>, and
+                    <span className="font-bold">Django Rest Framework</span>.
                   </li>
                   <li>
                     A reference point for GraphQL migration because of my
@@ -206,12 +214,14 @@ export const Resume = (): JSX.Element => {
                   <li>
                     Leading the UI development of internal administration UI
                     interfaces for managing consignments and carriers. My
-                    experience with React and Next.js has allowed me to help the
-                    team develop these applications.
+                    experience with <span className="font-bold">React</span>,{" "}
+                    <span className="font-bold">Typescript</span> and{" "}
+                    <span className="font-bold">Next.js</span>
+                    has allowed me to help the team develop these applications.
                   </li>
                   <li>
-                    Refactor the public Made.com blog. Migrate to React and
-                    Next.js and, together with the Design Team, give it a new
+                    Refactor the public <Link href="https://io.made.com/">Made.com blog</Link>. Migrate to React and
+                    Next.js and, together with the Design Team, gave it a new
                     look.
                   </li>
                 </div>
