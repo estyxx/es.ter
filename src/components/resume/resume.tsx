@@ -152,10 +152,10 @@ export const Resume = (): JSX.Element => {
                 </h1>
                 <p className="mb-2 text-sm tracking-widest text-gray-500 uppercase">
                   <Link
-                    href="https://www.youtube.com/watch?v=7_FyRR3yN-k&t=22s"
+                    href="https://es.ter/europython"
                     target="_blank"
                   >
-                    https://bit.ly/3U4eAX4
+                    https://es.ter/europython
                   </Link>
                 </p>
                 <div className="mb-1 text-gray-500 list-disc">
