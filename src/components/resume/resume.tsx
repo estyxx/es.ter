@@ -83,7 +83,7 @@ export const Resume = (): JSX.Element => {
 
         <div className="max-w-6xl py-4 bg-gray-200">
           <div className="grid gap-4 mx-6 md:grid-cols-3 sm:grid-cols-1">
-            <div className="col-span-3 py-4 border-b-2 border-gray-300">
+            <div className="col-span-3 py-4 mx-6 border-b-2 border-gray-300">
               <Header />
             </div>
             <div className="px-6">
