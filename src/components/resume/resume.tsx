@@ -149,7 +149,7 @@ export const Resume = (): JSX.Element => {
                   <li>
                     A reference point for GraphQL migration because of my
                     open-source work with the <StrawberryLink /> library. I was
-                    able to give guidance on how to implement our graphql API
+                    able to provide guidance on how to implement our graphql API
                     better.
                   </li>
                   <li>
@@ -158,10 +158,10 @@ export const Resume = (): JSX.Element => {
                     experience with <span className="font-bold">React</span>,{" "}
                     <span className="font-bold">Typescript</span> and{" "}
                     <span className="font-bold">Next.js</span> has allowed me to
-                    help the team develop these applications.
+                    help my team developing these applications.
                   </li>
                   <li>
-                    Refactor the public{" "}
+                    Refactoring the public{" "}
                     <Link href="https://io.made.com/">io.Made.com</Link> blog.
                     Migrate to React and Next.js and, together with the Design
                     Team, gave it a new look.
@@ -174,7 +174,7 @@ export const Resume = (): JSX.Element => {
                 companyUrl="https://pycon.it"
                 from="May 2019"
               >
-                Developing and maintaining of the conference website and
+                Developing and maintaining the conference website and
                 micro-services build with Python, Django, GraphQL, React,
                 Next.js, Storybook, Tailwind CSS.
               </Experience>
@@ -251,8 +251,8 @@ export const Resume = (): JSX.Element => {
                   Talk &quot;Automate cleaning code in a few easy steps&quot;
                 </h1>
                 <p className="mb-2 text-sm tracking-widest text-gray-500 uppercase">
-                  <Link href="https://es.ter/europython" target="_blank">
-                    https://es.ter/europython
+                  <Link href="https://ester.lol/europython" target="_blank">
+                    https://ester.lol/europython
                   </Link>
                 </p>
                 <div className="mb-1 text-gray-500 list-disc">
