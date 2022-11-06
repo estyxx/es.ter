@@ -20,24 +20,13 @@
       "pnpm format"
     ]
   },
-  "browser": {
-    "html-pdf": false
-  },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^6.2.0",
-    "@fortawesome/free-brands-svg-icons": "^6.2.0",
-    "@fortawesome/free-regular-svg-icons": "^6.2.0",
-    "@fortawesome/free-solid-svg-icons": "^6.2.0",
-    "@fortawesome/react-fontawesome": "^0.2.0",
-    "@headlessui/react": "^1.7.3",
-    "@heroicons/react": "^2.0.12",
-    "@iconscout/react-unicons": "^1.1.6",
     "babel-plugin-macros": "^3.1.0",
-    "html-pdf": "^3.0.1",
     "next": "13.0.0",
     "puppeteer": "^19.2.2",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-icons": "^4.6.0"
   },
   "devDependencies": {
     "@trivago/prettier-plugin-sort-imports": "^3.4.0",

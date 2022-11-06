@@ -1,8 +1,10 @@
-import { brands, solid } from "@fortawesome/fontawesome-svg-core/import.macro";
 import { ContactLink } from "components/resume/contact-link";
-import React from "react";
 import Image from "next/image";
-
+import React from "react";
+import { FaPython } from 'react-icons/fa';
+import { FaEnvelope, FaGithub, FaLinkedin, FaReact,FaTwitter } from "react-icons/fa"
+import { GrGraphQl } from 'react-icons/gr'
+import { SiDjango,SiNextdotjs , SiTypescript} from 'react-icons/si'
 export const Header = (): JSX.Element => {
   return (
     <div className="flex flex-row justify-between ">
@@ -24,28 +26,36 @@ export const Header = (): JSX.Element => {
           <div className="text-gray-400 uppercase">
             Full Stack Web Developer
           </div>
+          <div className="flex flex-row gap-2 text-gray-400">
+            <FaPython/>
+            <SiDjango/>
+            <GrGraphQl/>
+            <FaReact/>
+            <SiNextdotjs/>
+            <SiTypescript />
+          </div>
         </div>
       </div>
       <div className="flex flex-col justify-center">
         <ContactLink
           url="mailto:beltrami.ester@gmail.com"
           text="beltrami.ester@gmail.com"
-          Icon={solid("envelope")}
+          Icon={FaEnvelope}
         />
         <ContactLink
           url="https://www.linkedin.com/in/beltramiester"
           text="linkedin.com/in/beltramiester"
-          Icon={brands("linkedin")}
+          Icon={FaLinkedin}
         />
         <ContactLink
           url="https://github.com/estyxx"
           text="github.com/estyxx"
-          Icon={brands("github")}
+          Icon={FaGithub}
         />
         <ContactLink
           url="https://twitter.com/esterbeltrami"
           text="@esterbeltrami"
-          Icon={brands("twitter")}
+          Icon={FaTwitter}
         />
       </div>
     </div>

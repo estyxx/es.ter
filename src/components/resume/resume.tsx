@@ -136,7 +136,7 @@ export const Resume = (): JSX.Element => {
                     Software development and design of the micro-services
                     sitting behind the scenes of MADE.COM responsible for
                     managing warehouses, carriers and shipping to the end
-                    customer.
+                    customers.
                   </li>
                   <li>
                     Working with different python frameworks like{" "}

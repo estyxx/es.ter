@@ -1,7 +1,6 @@
-import { IconProp } from "@fortawesome/fontawesome-svg-core";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 import React from "react";
+import { IconType } from "react-icons";
 
 export const ContactLink = ({
   url,
@@ -10,14 +9,14 @@ export const ContactLink = ({
 }: {
   url: string;
   text: string;
-  Icon: IconProp;
+  Icon: IconType;
 }): JSX.Element => {
   return (
     <Link href={url}>
       <div className="flex flex-row items-center justify-end">
         <div className="text-sm">{text}</div>
         &nbsp;
-        <FontAwesomeIcon icon={Icon} size="sm" />
+        <Icon />
       </div>
     </Link>
   );
