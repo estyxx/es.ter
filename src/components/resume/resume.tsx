@@ -1,6 +1,6 @@
 import Link from "components/link";
 import { Header } from "components/resume/header";
-import NextLink from "next/link"
+import NextLink from "next/link";
 import React from "react";
 
 const Experience = ({
@@ -146,6 +146,11 @@ export const Resume = (): JSX.Element => {
                     <span className="font-bold">Aiohttp</span>,{" "}
                     <span className="font-bold">FastAPI</span>, and{" "}
                     <span className="font-bold">Django Rest Framework</span>.
+                  </li>
+                  <li>
+                    Building event-driven infrastructure to communicate between micro-services
+                    using{" "}
+                    <Link href="https://www.eventstore.com">Eventstore</Link>.
                   </li>
                   <li>
                     A reference point for GraphQL migration because of my
