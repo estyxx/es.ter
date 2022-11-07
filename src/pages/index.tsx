@@ -1,4 +1,5 @@
-import Link from "next/link";
+import Link from "components/link";
+import NextLink from "next/link"
 import { TbBrandGithub, TbBrandLinkedin,TbBrandTwitter } from "react-icons/tb";
 
 const Home = (): JSX.Element => {
@@ -21,7 +22,7 @@ const Home = (): JSX.Element => {
               </div>
 
               <div className="mb-8">
-                <p className="mb-4 text-slate-400">
+                <p className="mb-4 leading-relaxed text-slate-400">
                   I&apos;m a software engineer at{" "}
                   <Link href="https://www.made.com/" className="font-bold">
                     Made.com
@@ -30,10 +31,10 @@ const Home = (): JSX.Element => {
                   <Link href="https://pycon.it" className="font-bold">
                     PyCon Italia
                   </Link>{" "}
-                  developer and organizer,{" "}
+                  developer and organizer,{" "}<br/>
                   <Link href="https://strawberry.rocks/" className="font-bold">
-                    🍓 strawberry-graphql{" "}
-                  </Link>
+                    🍓strawberry-graphql
+                  </Link>{" "}
                   core-dev, and{" "}
                   <Link href="https://python-poetry.org/" className="font-bold">
                     Poetry Package Manager
@@ -49,19 +50,19 @@ const Home = (): JSX.Element => {
               </div>
 
               <div>
-                <Link
+                <NextLink
                   className="px-8 py-4 font-mono border-2 rounded-sm border-emerald-300 text-emerald-300"
                   href="/resume"
                 >
                   Click here for my CV!
-                </Link>
+                </NextLink>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="md:relative">
-        <div className="fixed right-0 bottom-4 left-4">
+      <div className="relative">
+        <div className="absolute bottom-4 left-4">
           <div className="p-4">
             <Link href="https://github.com/estyxx">
               <TbBrandGithub className="hover:text-emerald-300" size="2em" />

@@ -1,5 +1,6 @@
+import Link from "components/link";
 import { Header } from "components/resume/header";
-import Link from "next/link";
+import NextLink from "next/link"
 import React from "react";
 
 const Experience = ({
@@ -96,12 +97,12 @@ export const Resume = (): JSX.Element => {
     <div className="flex justify-center px-16 py-6 text-slate-900">
       <div className="flex flex-col justify-end gap-6">
         <div className="self-end flex-initial print:hidden">
-          <Link
+          <NextLink
             href="/cv.pdf"
             className="px-8 py-4 font-mono border-2 rounded-sm border-emerald-300 text-emerald-300"
           >
             Download
-          </Link>
+          </NextLink>
         </div>
 
         <div className="max-w-5xl py-4 bg-gray-200">
