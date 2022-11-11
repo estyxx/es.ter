@@ -132,8 +132,8 @@ export const Resume = (): JSX.Element => {
                 companyUrl="https://made.com"
                 from="February 2021"
               >
-                <div className="ml-4">
-                  <li>
+                <div className="list-inside">
+                  <li className="">
                     Software development and design of the micro-services
                     sitting behind the scenes of MADE.COM responsible for
                     managing warehouses, carriers and shipping to the end
@@ -148,8 +148,8 @@ export const Resume = (): JSX.Element => {
                     <span className="font-bold">Django Rest Framework</span>.
                   </li>
                   <li>
-                    Building event-driven infrastructure to communicate between micro-services
-                    using{" "}
+                    Building event-driven infrastructure to communicate between
+                    micro-services using{" "}
                     <Link href="https://www.eventstore.com">Eventstore</Link>.
                   </li>
                   <li>
@@ -193,10 +193,12 @@ export const Resume = (): JSX.Element => {
               >
                 A library to create GraphQL APIs with Python, dataclasses and
                 type hints.
-                <li className="ml-4">
-                  Feature development, bug fixing, user support and docs
-                  writing.
-                </li>
+                <div className="list-inside">
+                  <li>
+                    Feature development, bug fixing, user support and docs
+                    writing.
+                  </li>
+                </div>
               </Experience>
               <Experience
                 jobTitle="Full Stack Web Developer"
@@ -205,7 +207,7 @@ export const Resume = (): JSX.Element => {
                 from="December 2019"
                 to="February 2021"
               >
-                <div className="ml-4">
+                <div className="list-inside">
                   <li>
                     Developing of a web application that allows the extraction
                     of information from the web, get notified if anything
@@ -239,7 +241,7 @@ export const Resume = (): JSX.Element => {
               >
                 At OT Consulting I used to be a consultant for Max Mara, an
                 international fashion company.
-                <div className="ml-4">
+                <div className="list-inside">
                   <li>
                     helping them develop and maintain their ERP web applications
                     for inventory management.
