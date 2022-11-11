@@ -7,9 +7,9 @@ import { GrGraphQl } from 'react-icons/gr'
 import { SiDjango,SiNextdotjs , SiTypescript} from 'react-icons/si'
 export const Header = (): JSX.Element => {
   return (
-    <div className="flex flex-row justify-between ">
-      <div className="flex items-center gap-4 ">
-        <div className="flex print:hidden">
+    <div className="flex flex-col md:flex-row justify-between ">
+      <div className="md:flex items-center gap-4 ">
+        <div className=" print:hidden">
           <Image
             src="/foto.profilo.1.png"
             alt=""
@@ -36,7 +36,7 @@ export const Header = (): JSX.Element => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col justify-center">
+      <div className="flex flex-col justify-center mt-4 md:mt-0 ">
         <ContactLink
           url="mailto:beltrami.ester@gmail.com"
           text="beltrami.ester@gmail.com"

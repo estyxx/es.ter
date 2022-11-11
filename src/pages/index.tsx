@@ -1,13 +1,13 @@
 import Link from "components/link";
-import NextLink from "next/link"
-import { TbBrandGithub, TbBrandLinkedin,TbBrandTwitter } from "react-icons/tb";
+import NextLink from "next/link";
+import { TbBrandGithub, TbBrandLinkedin, TbBrandTwitter } from "react-icons/tb";
 
 const Home = (): JSX.Element => {
   return (
     <div className="container">
       <div className="flex h-screen">
-        <div className="m-auto">
-          <div className="max-w-3xl sm:mx-4">
+        <div className="m-4 lg:m-auto ">
+          <div className="max-w-3xl  ">
             <div>
               <div className="mb-8">
                 <h2 className="mb-4 font-mono text-emerald-300">
@@ -31,7 +31,7 @@ const Home = (): JSX.Element => {
                   <Link href="https://pycon.it" className="font-bold">
                     PyCon Italia
                   </Link>{" "}
-                  developer and organizer,{" "}<br/>
+                  developer and organizer, <br />
                   <Link href="https://strawberry.rocks/" className="font-bold">
                     🍓strawberry-graphql
                   </Link>{" "}
@@ -61,7 +61,7 @@ const Home = (): JSX.Element => {
           </div>
         </div>
       </div>
-      <div className="relative">
+      <div className="relative hidden md:block">
         <div className="absolute bottom-4 left-4">
           <div className="p-4">
             <Link href="https://github.com/estyxx">

@@ -13,7 +13,7 @@ export const ContactLink = ({
 }): JSX.Element => {
   return (
     <Link href={url}>
-      <div className="flex flex-row items-center justify-end">
+      <div className="flex flex-row items-center md:justify-end">
         <div className="text-sm">{text}</div>
         &nbsp;
         <Icon />

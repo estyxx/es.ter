@@ -94,7 +94,7 @@ const PoetryLink = (): JSX.Element => {
 
 export const Resume = (): JSX.Element => {
   return (
-    <div className="flex justify-center px-16 py-6 text-slate-900">
+    <div className="flex justify-center px-4 md:px-16 py-6 text-slate-900">
       <div className="flex flex-col justify-end gap-6">
         <div className="self-end flex-initial print:hidden">
           <NextLink
@@ -105,12 +105,12 @@ export const Resume = (): JSX.Element => {
           </NextLink>
         </div>
 
-        <div className="max-w-5xl py-4 bg-gray-200">
-          <div className="grid gap-4 mx-6 md:grid-cols-3 sm:grid-cols-1">
-            <div className="col-span-3 py-4 mx-6 border-b-2 border-gray-300">
+        <div className="max-w-5xl md:py-4 bg-gray-200">
+          <div className="grid gap-4 md:mx-6 grid-cols-1">
+            <div className="py-4 mx-6 border-b-2 border-gray-300">
               <Header />
             </div>
-            <div className="col-span-3 px-6">
+            <div className=" px-6">
               <h1 className="text-gray-500">
                 I am a passionate full-stack developer with a degree in Computer
                 Science and over 6+ years of experience building websites and
