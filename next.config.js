@@ -6,7 +6,7 @@ const nextConfig = {
     return [
       {
         source: '/europython',
-        destination: 'https://www.youtube.com/watch?v=7_FyRR3yN-k&t=22s',
+        destination: 'https://youtu.be/7_FyRR3yN-k',
         permanent: true,
       },
     ]
